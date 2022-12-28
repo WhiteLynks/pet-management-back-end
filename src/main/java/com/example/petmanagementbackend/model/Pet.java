@@ -2,16 +2,31 @@ package com.example.petmanagementbackend.model;
 
 import jakarta.persistence.*;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 @Entity
-@Table(name = "Pets")
+@Table(name = "pets")
 public class Pet {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private long id;
+
+    @NotBlank
+    @Size(min = 1, max = 255)
     private String name;
+
+    @NotBlank
     private Long code;
+
+    @NotBlank
+    @Size(min = 1, max = 40)
     private String type;
+
+    @NotBlank
+    @Size(min = 1, max = 40)
     private String color;
 
     public Pet() {
@@ -24,7 +39,7 @@ public class Pet {
         this.color = color;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
