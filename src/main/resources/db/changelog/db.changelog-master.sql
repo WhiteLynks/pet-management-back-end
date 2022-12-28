@@ -2,11 +2,11 @@
 
 --changeset dev:create-table
 CREATE TABLE Pets(
-                     Id int primary key,
-                     Name varchar(40),
-                     Code bigint,
-                     Type varchar(40),
-                     FurColor varchar(40)
+                     id int primary key,
+                     name varchar(40),
+                     code bigint,
+                     type varchar(40),
+                     color varchar(40)
 );
 
 --changeset dev:insert-pets-01
