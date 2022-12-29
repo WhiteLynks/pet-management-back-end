@@ -6,4 +6,15 @@ This is the back end for pet management app made for Wisercat test assignment. T
 
 ## Running back end ##
 
-To run the back end either run PetManagementBackEndApplication in your favorite IDE or run the command `mvn spring-boot:run` in project root directory
+To run the back end either run java class called PetManagementBackEndApplication in your favorite IDE or run the command `mvn spring-boot:run` in project root directory
+
+## Time spent on assignment ##
+
+Roughly 3 evenings/nights
+
+## Unfinished features ##
+List on things I wanted to add but couldn't due to time constraints:
+
+* Validate data on back end as well
+* tests
+* basic user validation with spring security
