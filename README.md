@@ -16,5 +16,6 @@ Roughly 3 evenings/nights
 List on things I wanted to add but couldn't due to time constraints:
 
 * Validate data on back end as well
-* tests
-* basic user validation with spring security
+* Tests
+* Basic user validation with spring security
+* Pet details page
